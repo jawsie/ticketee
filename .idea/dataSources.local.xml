@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ticketee: development" uuid="e70ef8cb-8f98-4d93-a3a6-f9c19427f9e7">
+      <user-name>root</user-name>
+      <schema-pattern>ticketee_development.*</schema-pattern>
+      <default-schemas>ticketee_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails ticketee: test" uuid="57b0a081-44ff-4e7f-9bd7-fdca49c501f6">
+      <user-name>root</user-name>
+      <schema-pattern>ticketee_development.*</schema-pattern>
+      <default-schemas>ticketee_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails ticketee: production" uuid="775eff65-23e4-4a6c-9aec-026a040d7843">
+      <user-name>root</user-name>
+      <schema-pattern>ticketee_development.*</schema-pattern>
+      <default-schemas>ticketee_development.*</default-schemas>
+    </data-source>
+  </component>
+</project>
