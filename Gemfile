@@ -50,6 +50,7 @@ group :development, :test do
   gem 'spring', '~> 1.3.3'
 
   gem 'rspec-rails'
+  gem 'pundit'
 end
 
 group :test do

@@ -3,8 +3,14 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
   end
+
+  def show
+    authorize @project, :show?
+  end
+
   def edit
   end
+
   def update
     if @project.update(project_params)
       flash[:notice] = "Project has been updated."
@@ -14,7 +20,9 @@ class ProjectsController < ApplicationController
       render "edit"
     end
   end
+
   private
+
   def set_project
     @project = Project.find(params[:id])
   rescue ActiveRecord::RecordNotFound
@@ -22,6 +30,7 @@ class ProjectsController < ApplicationController
         " for could not be found."
     redirect_to projects_path
   end
+
   def project_params
     params.require(:project).permit(:name, :description)
   end
